@@ -1,0 +1,275 @@
+/* Index page */
+/* Hamburger Menu */
+.menu-wrap {
+  display: block;
+}
+
+.menu-wrap {
+  position: fixed;
+  top: 25px;
+  right: 20px;
+  z-index: 1;
+}
+
+.menu-wrap .toggler {
+  position: absolute;
+  top: 25px;
+  right: 10px;
+  z-index: 2;
+  cursor: pointer;
+  width: 50px;
+  height: 50px;
+  opacity: 0;
+}
+
+.menu-wrap .hamburger {
+  position: absolute;
+  top: 25px;
+  right: 10px;
+  z-index: 1;
+  width: 50px;
+  height: 50px;
+  padding: 0.7rem;
+  background: rgba(13, 110, 139, 0.75);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Hamburger Line */
+.menu-wrap .hamburger > div {
+  position: relative;
+  flex: none;
+  width: 100%;
+  height: 2px;
+  background: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.4s ease;
+}
+
+/* Hamburger Lines - Top & Bottom */
+.menu-wrap .hamburger > div::before,
+.menu-wrap .hamburger > div::after {
+  content: "";
+  position: absolute;
+  z-index: 1;
+  top: -10px;
+  width: 100%;
+  height: 2px;
+  background: white;
+}
+
+/* Moves Line Down */
+.menu-wrap .hamburger > div::after {
+  top: 10px;
+}
+
+/* Toggler Animation */
+.menu-wrap .toggler:checked + .hamburger > div {
+  transform: rotate(135deg);
+}
+
+/* Turns Lines Into X */
+.menu-wrap .toggler:checked + .hamburger > div:before,
+.menu-wrap .toggler:checked + .hamburger > div:after {
+  top: 0;
+  transform: rotate(90deg);
+}
+
+/* Rotate On Hover When Checked */
+.menu-wrap .toggler:checked:hover + .hamburger > div {
+  transform: rotate(225deg);
+}
+
+/* Show Menu */
+.menu-wrap .toggler:checked ~ .menu {
+  visibility: visible;
+}
+
+.menu-wrap .toggler:checked ~ .menu > div {
+  transform: scale(1);
+  transition-duration: 0.75s;
+}
+
+.menu-wrap .toggler:checked ~ .menu > div > div {
+  opacity: 1;
+  transition: opacity 0.4s ease 0.4s;
+}
+
+.menu-wrap .menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  visibility: hidden;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.menu-wrap .menu > div {
+  background: rgba(24, 39, 51, 0.85);
+  border-radius: 50%;
+  width: 200vw;
+  height: 200vh;
+  display: flex;
+  flex: none;
+  align-items: center;
+  justify-content: center;
+  transform: scale(0);
+  transition: all 0.4s ease;
+}
+
+.menu-wrap .menu > div > div {
+  text-align: center;
+  max-width: 90vw;
+  max-height: 100vh;
+  opacity: 0;
+  transition: opacity 0.4s ease;
+}
+
+.menu-wrap .menu div div ul li {
+  list-style: none;
+  color: white;
+  font-size: 1.5rem;
+  padding: 1rem;
+}
+
+.menu-wrap .menu div div ul li a {
+  color: white;
+  text-decoration: none;
+  transition: color 0.4s ease;
+}
+
+.menu-wrap .menu div div ul li:hover a {
+  color: rgb(105, 203, 106);
+}
+
+/* Navigation Bar */
+/* Navigation Bar */
+nav {
+  height: 100%;
+}
+
+nav ul li {
+  display: none;
+}
+
+nav ul li:last-child {
+  display: block;
+  text-align: center;
+}
+
+nav ul li a:last-child {
+  padding: 15px 15px;
+}
+
+nav .btn {
+  margin-left: 0px;
+}
+
+section .slide {
+  height: 750px;
+}
+
+section .indicator {
+  position: absolute;
+  left: 37%;
+  top: 190%;
+}
+
+.section-one {
+  font-size: 25px;
+}
+
+.doctors-div {
+  font-size: 15px;
+}
+
+.doctors-div p {
+  font-size: 25px;
+}
+
+.doctors-info {
+  display: inline-flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  align-content: center;
+  height: 100%;
+  padding-bottom: 50px;
+  width: 300px;
+}
+
+.doctors-info div {
+  width: 100%;
+  margin-bottom: 70px;
+}
+
+.doctors-info div img {
+  display: block;
+  width: 298px;
+  height: 298px;
+}
+
+/* Doctors page */
+section div {
+  height: 750px;
+}
+
+.doctors-two img {
+  height: 600px;
+}
+
+/* Services Page */
+.services-info div {
+  height: 230px;
+}
+
+/* Departments Page */
+.departments {
+  padding: 0;
+}
+
+/* Contact Page */
+.contact form {
+  width: 450px;
+  font-size: 18px;
+  border: 3px solid rgb(172, 169, 169);
+  padding: 18px 40px 1050px 40px;
+}
+
+.contact form input,
+.contact form textarea {
+  width: 100%;
+}
+
+.contact form div input {
+  width: 100%;
+}
+
+/* Appointment page */
+.appointment form {
+  width: 450px;
+  font-size: 18px;
+  border: 3px solid rgb(172, 169, 169);
+  padding: 18px 0 1050px 40px;
+}
+
+.appointment form input,
+select,
+textarea {
+  width: 360px;
+}
+
+.appointment form div input {
+  width: 360px;
+}
+
+.message-div {
+  width: 360px;
+}
