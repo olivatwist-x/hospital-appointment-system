@@ -3,9 +3,7 @@ const form = document.getElementById("appointment-form");
 const contactForm = document.getElementById("contact-form");
 const messageDiv = document.querySelector(".message-div");
 
-function addMessage(e) {
-  e.preventDefault();
-
+function addMessage() {
   const firstName = document.getElementById("firstName");
   const lastName = document.getElementById("lastName");
   const email = document.getElementById("email");
