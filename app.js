@@ -36,7 +36,7 @@ function storeValuesInLS() {
     lastName: lastName.value,
     email: email.value,
     number: number.value,
-    select: select.value,
+    subject: select.value,
     message: message.value
   };
 
