@@ -516,6 +516,7 @@ footer {
 .contact form textarea {
   padding-top: 10px;
   height: 250px;
+  resize: none;
 }
 
 .contact .btn {
@@ -589,6 +590,7 @@ textarea {
 .appointment form textarea {
   padding-top: 10px;
   height: 250px;
+  resize: none;
 }
 
 .appointment .btn {
