@@ -612,3 +612,8 @@ textarea {
   border-radius: 5px;
   display: none;
 }
+
+
+.contact-message-div {
+  width: 100%;
+}

@@ -1,8 +1,11 @@
 //Form Validation
 const form = document.getElementById("appointment-form");
+const contactForm = document.getElementById("contact-form");
 const messageDiv = document.querySelector(".message-div");
 
 function addMessage(e) {
+  e.preventDefault();
+
   const firstName = document.getElementById("firstName");
   const lastName = document.getElementById("lastName");
   const email = document.getElementById("email");
@@ -25,7 +28,6 @@ function addMessage(e) {
   } else {
     showMsg("Please fill the form.", "rgb(235, 31, 31)");
   }
-  e.preventDefault();
 }
 
 //Add to Local Storage
@@ -67,4 +69,9 @@ function clearError() {
 }
 
 //Event Listeners
-form.addEventListener("submit", addMessage);
+if (form) {
+  addEventListener("submit", addMessage);
+}
+if (contactForm) {
+  addEventListener("submit", addMessage);
+}
