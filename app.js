@@ -4,8 +4,6 @@ const contactForm = document.getElementById("contact-form");
 const messageDiv = document.querySelector(".message-div");
 
 function addMessage(e) {
-  e.preventDefault();
-
   const firstName = document.getElementById("firstName");
   const lastName = document.getElementById("lastName");
   const email = document.getElementById("email");
@@ -26,6 +24,7 @@ function addMessage(e) {
     showMsg(" Booked Successfully.", "rgb(105, 203, 106)");
     location.reload();
   } else {
+    e.preventDefault();
     showMsg("Please fill the form.", "rgb(235, 31, 31)");
   }
 }
@@ -37,7 +36,7 @@ function storeValuesInLS() {
     lastName: lastName.value,
     email: email.value,
     number: number.value,
-    select: select.value,
+    subject: select.value,
     message: message.value
   };
 
