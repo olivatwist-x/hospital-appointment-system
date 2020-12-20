@@ -73,29 +73,29 @@
   </aside>
 
   <div class="appointment">
-    <form id="appointment-form">
+    <form method="POST" data-netlify="true" name="contact" id="appointment-form">
       <div>
         <div>
           <p>
             <label for="firstName">First Name</label>
-            <input type="text" placeholder="Your firstname" id="firstName" />
+            <input type="text" placeholder="Your firstname" name="firstName" id="firstName" />
           </p>
         </div>
 
         <div>
           <label for="lastName">Last Name</label>
-          <input type="text" placeholder="Your lastname" id="lastName" />
+          <input type="text" placeholder="Your lastname" name="lastName" id="lastName" />
         </div>
       </div>
 
       <label for="email">Email</label>
-      <input type="email" placeholder="Your email address" id="email" />
+      <input type="email" placeholder="Your email address" name="email" id="email" />
 
       <label for="number">Contact Number</label>
-      <input type="number" placeholder="Your Contact Number" id="number" />
+      <input type="number" placeholder="Your Contact Number" name="number" id="number" />
 
       <label for="select">Choose Your Subject</label>
-      <select id="select">
+      <select name="select" id="select">
         <option selected="selected" disabled="disabled">Choose Your Subject</option>
         <option>Main Surgery</option>
         <option>Plastic Surgery</option>
@@ -104,7 +104,7 @@
       </select>
 
       <label for="message">Message</label>
-      <textarea placeholder="Your Message" id="message"></textarea>
+      <textarea placeholder="Your Message" name="message" id="message"></textarea>
 
       <input type="submit" value="Send Message" class="btn btn-submit" />
 

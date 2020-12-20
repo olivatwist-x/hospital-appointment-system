@@ -1,48 +1,52 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta http-equiv="X-UA-Compatible" content="ie=edge">
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/js/all.min.js"></script>
-    
-        <title>LifeCare Hospital Appointment System</title>
-        
-        <link rel="stylesheet" href="css/style.css">
-        <link rel="stylesheet" media="screen and (max-width:768px)" href="css/tablet.css">
-        <link rel="stylesheet" media="screen and (max-width:500px)" href="css/mobile.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/js/all.min.js"></script>
+
+    <title>LifeCare Hospital Appointment System</title>
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" media="screen and (max-width:768px)" href="css/tablet.css">
+    <link rel="stylesheet" media="screen and (max-width:500px)" href="css/mobile.css">
 </head>
+
 <body>
     <header>
         <p><i class="fas fa-stethoscope"></i>LIFE<span>CARE</span></p>
         <p><i class="fas fa-phone"></i>
-        08148733735
-        <br>
-        09028184344
+            08148733735
+            <br>
+            09028184344
         </p>
         <p><i class="fas fa-tag"></i>No 28, Gwaza Close,
-        <br>
-        Sabon Tasha, Kaduna,
-        <br>
-        Kaduna State, Nigeria</p>
+            <br>
+            Sabon Tasha, Kaduna,
+            <br>
+            Kaduna State, Nigeria</p>
 
         <div class="menu-wrap">
-        <input type="checkbox" class="toggler">
-        <div class="hamburger"><div></div></div>
-        <div class="menu">
-            <div>
+            <input type="checkbox" class="toggler">
+            <div class="hamburger">
+                <div></div>
+            </div>
+            <div class="menu">
                 <div>
-                    <ul>
-                        <li><a href="index.html">HOME</a></li>
-                        <li><a href="doctors.html">DOCTORS</a></li>
-                        <li><a href="services.html">SERVICES</a></li>
-                        <li><a href="departments.html">DEPARTMENTS</a></li>
-                        <li><a href="blog.html">BLOG</a></li>
-                        <li><a href="contact.html">CONTACT</a></li> 
-                    </ul>
+                    <div>
+                        <ul>
+                            <li><a href="index.html">HOME</a></li>
+                            <li><a href="doctors.html">DOCTORS</a></li>
+                            <li><a href="services.html">SERVICES</a></li>
+                            <li><a href="departments.html">DEPARTMENTS</a></li>
+                            <li><a href="blog.html">BLOG</a></li>
+                            <li><a href="contact.html">CONTACT</a></li>
+                        </ul>
+                    </div>
                 </div>
             </div>
-        </div>
         </div>
     </header>
 
@@ -64,9 +68,9 @@
                 <div style="background: url(images/img_bg_1.jpg) no-repeat center center/cover;" class="slide active">
                     <div>
                         <h1>Contact Us</h1>
-                        <h3>Separated they live in Bookmarksgrove right at the coast of the 
-                        <br>
-                        <span>Semantics, a large language ocean.</span></h3>
+                        <h3>Separated they live in Bookmarksgrove right at the coast of the
+                            <br>
+                            <span>Semantics, a large language ocean.</span></h3>
                     </div>
                 </div>
             </div>
@@ -74,30 +78,32 @@
     </section>
 
     <div class="section-one">
-        <p><h2>Make an Appointment</h2></p>
+        <p>
+            <h2>Make an Appointment</h2>
+        </p>
         <p><a href="appointment.html" class="btn btn-section">Book an appointment<i class="fas fa-calendar"></i></a></p>
     </div>
 
     <div class="contact-card">
         <p>Contact Information</p>
-        
+
         <div class="contact-info">
             <div>
                 <p><i class="fas fa-tag"></i>No 28, Gwaza Close,
-                <br>
-                Sabon Tasha, Kaduna,
-                <br>
-                Kaduna State, Nigeria</p>
+                    <br>
+                    Sabon Tasha, Kaduna,
+                    <br>
+                    Kaduna State, Nigeria</p>
             </div>
             <div>
                 <p><i class="fas fa-phone"></i>
-                08148733735
-                <br>
-                09028184344
+                    08148733735
+                    <br>
+                    09028184344
                 </p>
             </div>
             <div>
-                <p><i class="fas fa-letter"></i>lifecare@gmail.com</p> 
+                <p><i class="fas fa-letter"></i>lifecare@gmail.com</p>
             </div>
             <div>
                 <p><i></i>lifecare.com</p>
@@ -110,39 +116,43 @@
     </aside>
 
     <div class="contact">
-        <form id="contact-form">
+        <form method="POST" data-netlify="true" name="contact" id="contact-form">
             <div>
-                <div><p><label for="text">First Name</label>
-                <input type="text" placeholder="Your firstname" id="firstName"></p></div>
+                <div>
+                    <p><label for="text">First Name</label>
+                        <input type="text" placeholder="Your firstname" name="firstName" id="firstName"></p>
+                </div>
 
                 <div><label for="text">Last Name</label>
-                <input type="text" placeholder="Your lastname" id="lastName"></div>
+                    <input type="text" placeholder="Your lastname" name="lastName" id="lastName">
+                </div>
             </div>
-            
+
             <label for="email">Email</label>
-            <input type="email" placeholder="Your email address" id="email">
+            <input type="email" placeholder="Your email address" name="email" id="email">
 
             <label for="number">Contact Number</label>
-            <input type="number" placeholder="Your Contact Number" id="number">
+            <input type="number" placeholder="Your Contact Number" name="number" id="number">
 
             <label for="text">Subject</label>
-            <input type="text" placeholder="Your subject of this message" id="select">
+            <input type="text" placeholder="Why you are contacting us" name="subject" id="select">
 
             <label for="textare">Message</label>
-            <textarea placeholder="Say something about us" id="message"></textarea>
+            <textarea placeholder="Say something about us" name="message" id="message"></textarea>
 
             <input type="submit" value="Send Message" class="btn btn-submit">
 
             <div class="message-div"></div>
-            
+
         </form>
     </div>
-    
+
     <footer>
         Copyright &copy 2020 - Olive
     </footer>
-    
+
     <script src="app.js" type="text/javascript"></script>
     <script src="UI.js" type="text/javascript"></script>
 </body>
+
 </html>
