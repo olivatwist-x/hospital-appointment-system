@@ -2,6 +2,7 @@
 const form = document.getElementById("appointment-form");
 const contactForm = document.getElementById("contact-form");
 const messageDiv = document.querySelector(".message-div");
+const articles = document.querySelectorAll(".article-title");
 
 function addMessage(e) {
   const firstName = document.getElementById("firstName");
@@ -74,3 +75,16 @@ if (form) {
 if (contactForm) {
   addEventListener("submit", addMessage);
 }
+
+articles.forEach(function(article) {
+  const btn = article.querySelector(".article-button");
+  btn.addEventListener("mouseover", function() {
+    articles.forEach(function(item) {
+      if (item !== article) {
+        item.classList.remove("show-text");
+      }
+    });
+
+    article.classList.toggle("show-text");
+  });
+});

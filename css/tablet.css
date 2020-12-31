@@ -199,17 +199,22 @@ section .indicator {
 
 /* Appointment Page */
 .appointment form {
-  padding: 18px 120px 1050px 120px;
+  padding: 18px 120px 1050px 60px;
+  width: 90%;
+
 }
 
 .appointment form div {
   display: block;
 }
 
-.appointment form div input {
-  width: 500px;
+.appointment form div input,
+.appointment form input,
+.appointment form select,
+.appointment form textarea {
+  width: 120%;
 }
 
 .message-div {
-  width: 500px;
+  width: 100%;
 }
